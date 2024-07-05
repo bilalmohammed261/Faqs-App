@@ -5,8 +5,12 @@ import FaqItem from '../FaqItem'
 class Faqs extends Component {
   constructor(props) {
     super(props)
+    const updatedFaqsList = props.faqsList.map(faq => ({
+      ...faq,
+      isClicked: false,
+    }))
     this.state = {
-      faqsList: props.faqsList,
+      faqsList: updatedFaqsList,
     }
   }
 

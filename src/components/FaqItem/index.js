@@ -1,7 +1,8 @@
 // Write your code here.
 const FaqItem = props => {
   const {faqDetails} = props
-  const {questionText, answerText} = faqDetails
+  const {questionText, answerText, isClicked} = faqDetails
+
   return (
     <div>
       <h1>{questionText}</h1>
